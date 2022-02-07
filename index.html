@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Changing images</title>
+
+        <style>
+            img {
+                width: 300px;
+                height: 300px;
+                }
+        </style>
+
+        <script type="text/javascript">
+              function show(name) {
+                var cover = "https://fancomstroy.ru/upload/iblock/bd1/2601046_vulkanicheskiy-seryy---lamar.jpg";
+                var elem = document.getElementById(name);
+                if (elem.src == cover) {
+                    if (name == "a") {
+                        elem.src = "https://w-dog.ru/wallpapers/11/3/505027076778511/priroda-gory-ozero-otrazhenie.jpg";
+                        }
+                    else if (name == "b") {
+                        elem.src = "https://storge.pic2.me/upload/899/5409829f097c9.jpg";
+                        }
+                    else if (name == "c") {
+                        elem.src = "https://puzzleit.ru/files/puzzles/161/160926/_original.jpg";
+                        }
+                    }
+                else {
+                    elem.src = cover;
+                    }
+                }
+        </script>
+
+    </head>
+    <body>
+
+        <img  id ='a' src='https://fancomstroy.ru/upload/iblock/bd1/2601046_vulkanicheskiy-seryy---lamar.jpg' onclick="show('a');">
+        <img  id ='b' src='https://fancomstroy.ru/upload/iblock/bd1/2601046_vulkanicheskiy-seryy---lamar.jpg' onclick="show('b');">
+        <img  id ='c' src='https://fancomstroy.ru/upload/iblock/bd1/2601046_vulkanicheskiy-seryy---lamar.jpg' onclick="show('c');">
+
+    </body>
+</html>
